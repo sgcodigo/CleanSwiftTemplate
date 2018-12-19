@@ -48,34 +48,35 @@ class ___VARIABLE_sceneName___VC: UICollectionViewController, ___VARIABLE_sceneN
         router.dataStore = interactor
     }
     
-    // MARK: Routing
+    //@IBOutlet weak var txtNameOfTextField: UITextField!
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let scene = segue.identifier {
-            let selector = NSSelectorFromString("routeTo\(scene)WithSegue:")
-            if let router = router, router.responds(to: selector) {
-                router.perform(selector, with: segue)
-            }
-        }
-    }
+    // MARK: View Lifecycles And View Setups
     
-    // MARK: View lifecycle
+    func setUpView() {}
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        doSomething()
+        setUpView()
     }
     
-    // MARK: Do something
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
     
-    //@IBOutlet weak var nameTextField: UITextField!
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+    }
+    
+    // MARK: Do Some Actions
     
     func doSomething() {
         let request = ___VARIABLE_sceneName___.Something.Request()
         interactor?.doSomething(request: request)
     }
     
-    func displaySomething(viewModel: ___VARIABLE_sceneName___.Something.ViewModel) {
+    // MARK: UI Callbacks
+    
+    func displaySomething(viewModel: ___VARIABLE_sceneName___.UseCaseName.ViewModel) {
         //nameTextField.text = viewModel.name
     }
 }

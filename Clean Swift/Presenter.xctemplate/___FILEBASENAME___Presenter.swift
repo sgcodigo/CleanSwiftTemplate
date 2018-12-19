@@ -13,7 +13,7 @@
 import UIKit
 
 protocol ___VARIABLE_sceneName___PresentationLogic {
-    func presentSomething(response: ___VARIABLE_sceneName___.Something.Response)
+    func presentSomething(response: ___VARIABLE_sceneName___.UseCaseName.Response)
 }
 
 class ___VARIABLE_sceneName___Presenter: ___VARIABLE_sceneName___PresentationLogic {
@@ -22,8 +22,8 @@ class ___VARIABLE_sceneName___Presenter: ___VARIABLE_sceneName___PresentationLog
   
     // MARK: Do something
   
-    func presentSomething(response: ___VARIABLE_sceneName___.Something.Response) {
-        let viewModel = ___VARIABLE_sceneName___.Something.ViewModel()
+    func presentSomething(response: ___VARIABLE_sceneName___.UseCaseName.Response) {
+        let viewModel = ___VARIABLE_sceneName___.UseCaseName.ViewModel()
         viewController?.displaySomething(viewModel: viewModel)
     }
 
