@@ -13,7 +13,7 @@
 import UIKit
 
 protocol ___VARIABLE_sceneName___DisplayLogic: class {
-    func displaySomething(viewModel: ___VARIABLE_sceneName___.Something.ViewModel)
+    func displaySomething(viewModel: ___VARIABLE_sceneName___.UseCaseName.ViewModel)
 }
 
 class ___VARIABLE_sceneName___VC: UICollectionViewController, ___VARIABLE_sceneName___DisplayLogic {
