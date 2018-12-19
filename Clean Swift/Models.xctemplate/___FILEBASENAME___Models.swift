@@ -16,11 +16,12 @@ enum ___VARIABLE_sceneName___ {
   
     // MARK: Use cases
   
-    enum Something {
+    enum UseCaseName {
     
-        struct Request {}
-        struct Response {}
-        struct ViewModel {}
+        class Request {}
+        class Response {}
+        class Data {}
+        class ViewModel {}
     
     }
     
