@@ -70,7 +70,7 @@ class ___VARIABLE_sceneName___VC: UICollectionViewController, ___VARIABLE_sceneN
     // MARK: Do Some Actions
     
     func doSomething() {
-        let request = ___VARIABLE_sceneName___.Something.Request()
+        let request = ___VARIABLE_sceneName___.UseCaseName.Request()
         interactor?.doSomething(request: request)
     }
     

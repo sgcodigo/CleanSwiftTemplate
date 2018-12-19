@@ -70,7 +70,7 @@ class ___VARIABLE_sceneName___VC: UIViewController, ___VARIABLE_sceneName___Disp
     // MARK: Do Some Actions
     
     func doSomething() {
-        let request = ___VARIABLE_sceneName___.Something.Request()
+        let request = ___VARIABLE_sceneName___.UseCaseName.Request()
         interactor?.doSomething(request: request)
     }
     
